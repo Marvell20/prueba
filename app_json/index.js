@@ -1,5 +1,35 @@
-const data = await fetch('./data.json')
-    .then(response => response.json())
+const data = [
+    {
+        "nombre": "Jose Maestre",
+        "edad": 23,
+        "telefonos": [
+            {
+                "tipoTelefono": "Casa",
+                "numeroTelefono": "3506673293"
+            },
+            {
+                "tipoTelefono": "Trabajo",
+                "numeroTelefono": "3104573245"
+            }
+        ],
+        "email": "jose.maestre@gmail.com"
+    },
+    {
+        "nombre": "Manuel Trujillo",
+        "edad": 20,
+        "telefonos": [
+            {
+                "tipoTelefono": "Casa",
+                "numeroTelefono": "3603456321"
+            },
+            {
+                "tipoTelefono": "Trabajo",
+                "numeroTelefono": "3245622341"
+            }
+        ],
+        "email": "manuel.trujillo@gmail.com"
+    }
+]
 
 const jsonList = document.getElementById("json-list");
 
